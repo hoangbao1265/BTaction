@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangGiaBao | Modern Interface</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (Simple & Premium) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo">HOANGGIABAO</div>
+            <ul class="nav-links">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <a href="#" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Khám phá</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero animate">
+            <h1>Kiến tạo tương lai<br>với <span style="background: linear-gradient(135deg, #6366f1, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Công nghệ</span></h1>
+            <p>Giải pháp tối ưu cho việc quản lý và phát triển hệ thống của bạn một cách hiện đại, tinh tế và hiệu quả nhất.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#" class="btn">Bắt đầu ngay</a>
+                <a href="#" class="btn" style="background: transparent; border: 1px solid var(--border-color);">Xem thêm tài liệu</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card animate" style="animation-delay: 0.2s;">
+                <div class="card-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3>Tốc độ vượt trội</h3>
+                <p>Hệ thống được tối ưu hóa để mang lại trải nghiệm nhanh nhất cho người dùng cuối.</p>
+            </div>
+            <div class="card animate" style="animation-delay: 0.4s;">
+                <div class="card-icon">
+                    <i data-lucide="shield"></i>
+                </div>
+                <h3>Bảo mật tối đa</h3>
+                <p>Tích hợp các tiêu chuẩn bảo mật hàng đầu để bảo vệ dữ liệu quan trọng của bạn.</p>
+            </div>
+            <div class="card animate" style="animation-delay: 0.6s;">
+                <div class="card-icon">
+                    <i data-lucide="layout"></i>
+                </div>
+                <h3>Giao diện tinh tế</h3>
+                <p>Thiết kế hiện đại, responsive hoàn hảo trên mọi thiết bị và nền tảng.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 100px; padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary);">
+        <p>&copy; 2024 HoangGiaBao. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
